@@ -36,6 +36,12 @@ body{
 .nav-container{
   text-align: center;
 }
+#menu-nav-icon{
+  display: none;
+}
+#menu-nav-icon img{
+  display:none;
+}
 #main-nav{
   display: block;
   z-index: 1;
@@ -358,6 +364,38 @@ body{
 
 /* Responsive */
 @media screen and (max-width: 768px){
+  #menu-nav-icon{
+    display: block;
+    padding-top:5px;
+    padding-left:5px;
+  }
+  #menu-nav-icon img{
+    height:30px;
+    width:30px;
+    display:block;
+    /*background-image: url(../image/menu.png);*/
+  }
+  #main-nav{
+    position:absolute;
+    top:30px;
+    left:0;
+    background-color: black;
+    opacity: 0.8;
+    width: 100%;
+    padding-top: 10px;
+    display: none;
+  }
+  #main-nav a{
+    float: none;
+    text-align: left;
+    /*width: 100%;*/
+    margin: 0;
+    display: block;
+    border-bottom: 1px dashed grey;
+    padding: 5px;
+    padding-left:10px;
+    padding-right:10px;
+  }
   .lists{
     width: 100%;
   }
