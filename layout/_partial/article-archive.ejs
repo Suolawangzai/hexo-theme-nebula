@@ -1,0 +1,20 @@
+<!-- Date and Author -->
+<p class="blog-post-meta">
+    <%= item.date.format(config.date_format) %>
+    <% if(item.author) { %>
+        by <%- item.author %>
+    <% } %>
+</p>
+
+<div class="blog-post">
+    <!-- Title -->
+    <h3 class="blog-post-title-archive">
+        <a href="<%- config.root %><%- item.path %>">
+            <%- titlecase(item.title) || titlecase(item.link)%>
+        </a>
+    </h3>
+
+    <hr />
+    <%- partial('article-categories', {item: item}) %>
+    <%- partial('article-tags', {item: item}) %>
+</div>

@@ -1,0 +1,33 @@
+<div class="main">
+<div class="blog-post">
+    <!-- Title -->
+    <h1 class="blog-post-title">
+        <a href="<%- config.root %><%- item.path %>">
+            <%- titlecase(item.title) || titlecase(item.link)%>
+        </a>
+    </h1>
+    <!-- Date and Author -->
+    <p class="blog-post-meta">
+        <%= item.date.format(config.date_format) %>
+        <% if(item.author) { %>
+            by <%- item.author %>
+        <% } %>
+    </p>
+    <!-- Content -->
+    <%- item.content %>
+
+    <!-- Social share choices -->
+    <%- partial('_partial/share', {item: item}) %>
+
+
+    <hr />
+
+
+    <!-- Tags and Categories links -->
+    <%- partial('article-categories', {item: item}) %>
+    <%- partial('article-tags', {item: item}) %>
+
+    <!-- Comment using disqus -->
+    <%- partial('comments') %>
+</div>
+</div>

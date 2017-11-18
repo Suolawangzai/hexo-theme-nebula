@@ -1,0 +1,39 @@
+<%
+var title = '';
+if (page.category) title = page.category;
+if (page.tag) title = page.tag;
+if (page.archive){
+    if (page.year) title = page.year + (page.month ? ' - ' + page.month : '');
+    else title = "Archives";
+}
+%>
+
+<div class="article-index">
+      <div class="sidelist">
+        <div class="list">
+          <% if(title) { %>
+              <h3><%- titlecase(title) %></h3>
+          <% } %>
+          <% if (page.archive){ %>
+          <%- list_archives({format: "MMM - YYYY"}) -%>
+          <%} else if (page.tag) {%>
+          <ul class="archive-list">
+          <% site.tags.sort('name').each(function(item){ %>
+              <li class="archive-list-item">
+                  <a class="archive-list-link" href="<%- config.root %><%- item.path %>"><%= item.name %> </a>
+                  <span class="archive-list-count"> (<%= item.posts.length %>)</span>
+              </li>
+          <% }); %>
+          </ul>
+          <%} else if (page.category) {%>
+              <%- list_categories() %>
+          <%}%>
+      </div>
+    </div>
+    <div class="main lists">
+        <% page.posts.each(function(item){ %>
+        <%- partial('_partial/article-archive', {item: item}) %>
+        <% }); %>
+        <%- partial('_partial/pagination') %>
+    </div>
+</div>

@@ -1,0 +1,18 @@
+<% if (theme.share_enabled) {%>
+  <div id="social-share">
+    <a data-url="<%=item.permalink%>" href="https://plus.google.com/share?url=" class="googleplus"><img src="<%= config.root %>image/googleplusicon.png" alt=""/></a>
+    <a data-url="<%=item.permalink%>" href="https://twitter.com/intent/tweet?url=" class="twitter"><img src="<%= config.root %>image/twittericon.png" alt=""/></a>
+    <a data-url="<%=item.permalink%>" href="http://pinterest.com/pin/create/button/?url=" class="pinterest"><img src="<%= config.root %>image/pinteresticon.png" alt=""/></a>
+    <a data-url="<%=item.permalink%>" href="https://www.facebook.com/sharer/sharer.php?u=" class="facebook"><img src="<%= config.root %>image/facebookicon.png" alt=""/></a>
+  </div>
+<%} %>
+
+
+
+
+<!--
+<% var ref = "https://www.facebook.com/sharer/sharer.php?u=" + item.permalink; %>
+<% var haha = encodeURI(item.permalink); %>
+<%= ref %>
+<%= haha %>
+-->

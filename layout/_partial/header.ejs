@@ -1,0 +1,17 @@
+<div class="blog-header">
+
+   <div class="nav-container">
+     <nav id="main-nav">
+       <!-- <a id="main-nav-toggle" class="nav-icon"></a> -->
+       <% for (var i in theme.menu){ %>
+         <a class="main-nav-link" href="<%- url_for(theme.menu[i]) %>"><%= i %></a>
+       <% } %>
+
+       <div id="search-form-wrap">
+         <%- search_form({button: '&#xF002;'}) %>
+       </div>
+     </nav>
+   </div>
+    <h1 class="blog-title"><%= config.title %></h1>
+    <p class="lead blog-description"><% if (config.subtitle){ %><%= config.subtitle %><% } %></p>
+</div>

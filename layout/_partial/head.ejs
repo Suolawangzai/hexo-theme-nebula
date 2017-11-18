@@ -1,0 +1,32 @@
+
+<head>
+    <meta charset="utf-8">
+    <%
+    var title = page.title;
+
+    if (is_archive()){
+      title = __('archive_a');
+
+      if (is_month()){
+        title += ': ' + page.year + '/' + page.month;
+      } else if (is_year()){
+        title += ': ' + page.year;
+      }
+    } else if (is_category()){
+      title = __('category') + ': ' + page.category;
+    } else if (is_tag()){
+      title = __('tag') + ': ' + page.tag;
+    }
+    %>
+    <title><% if (title){ %><%= title %> | <% } %><%= config.title %></title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="/favicon/favicon.ico">
+    <%- css('css/main') %>
+    <%- css('css/tagplugins') %>
+    <%- css('css/highlight') %>
+    <%- partial('google-analytics') %>
+</head>
