@@ -1,1 +1,14 @@
-HI
+<div class="main">
+<div class="blog-post">
+    <!-- Title -->
+    <h1 class="blog-post-title">
+        <a href="<%- config.root %><%- page.path %>">
+            <%- titlecase(page.title) || titlecase(page.link)%>
+        </a>
+    </h1>
+
+    <!-- Content -->
+    <%- page.content %>
+
+</div>
+</div>
