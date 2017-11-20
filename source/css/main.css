@@ -422,8 +422,6 @@ body{
 
 /* The Gallery (background) */
 .gallery {
-  /*display: none;*/
-  /*padding-top: 100px;*/
   width: 100%;
   height: 100%;
   padding-top:0.5%;
@@ -503,11 +501,11 @@ body{
 
 /* Position the "next button" to the right */
 .gallery .next {
-  right: 1%;
+  right: 0;
   border-radius: 3px 0 0 3px;
 }
 .gallery .prev{
-  left:1%;
+  left: 0;
 }
 
 /* On hover, add a black background color with a little bit see-through */
