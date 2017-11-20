@@ -8,11 +8,27 @@
 
 <div class="blog-post">
     <!-- Title -->
+    <!--
     <h3 class="blog-post-title-archive">
         <a href="<%- config.root %><%- item.path %>">
             <%- titlecase(item.title) || titlecase(item.link)%>
         </a>
     </h3>
+  -->
+    <% if (item.link){ %>
+      <h3 class="blog-post-title-archive">
+        <a href="<%- url_for(item.link) %>" target="_blank" itemprop="url"><%- titlecase(item.title) || titlecase(item.link) %></a>
+      </h3>
+    <% } else if (item.title){ %>
+      <h3 class="blog-post-title-archive">
+        <a href="<%- url_for(item.path) %>"><%- titlecase(item.title) %></a>
+      </h3>
+    <% } else{%>
+      <h3 class="bblog-post-title-archive">
+        <a href="<%- url_for(item.path) %>">No-title</a>
+      </h3>
+    <% }%>
+
 
     <hr />
     <%- partial('article-categories', {item: item}) %>

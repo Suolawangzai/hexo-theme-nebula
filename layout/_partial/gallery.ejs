@@ -1,0 +1,29 @@
+<% if (item.photos && item.photos.length){ %>
+<div id="<%= item.permalink %>" class="gallery">
+  <div class="modal-content">
+    <% item.photos.forEach(function(photo, i){ %>
+      <div class="mySlides">
+        <div class="numbertext"> <%= i+1 %> / <%=item.photos.length%> </div>
+        <img class="slide" src="<%- url_for(photo) %>" alt="<%- url_for(photo) %>">
+      </div>
+    <% }) %>
+
+    <a data-id="<%= item.permalink %>" class="prev">&#10094;</a>
+    <a data-id="<%= item.permalink %>" class="next">&#10095;</a>
+
+    <div class="caption-container">
+      <p class="caption"></p>
+    </div>
+
+
+    <div class="columns">
+      <% item.photos.forEach(function(photo, i){ %>
+        <div class="column">
+          <img data-id="<%= item.permalink %>" data-num="<%= i+1 %>" class="demo cursor" src="<%- url_for(photo) %>" alt="<%- url_for(photo) %>">
+        </div>
+      <% }) %>
+    </div>
+
+  </div>
+</div>
+<% } %>

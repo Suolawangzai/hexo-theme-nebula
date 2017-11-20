@@ -13,6 +13,8 @@
             by <%- item.author %>
         <% } %>
     </p>
+
+    <%- partial('gallery', {item: item}) %>
     <!-- Content -->
     <%- item.content %>
 
