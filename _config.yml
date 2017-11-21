@@ -10,7 +10,6 @@ excerpt_link: Read More
 # Social
 disqus_shortname:
 share_enabled: true
-favicon: /favicon/favicon.ico
 twitter:
 instagram:
 pinterest:
@@ -21,3 +20,4 @@ fb_app_id:
 
 # Miscellaneous
 google_analytics:
+favicon: /favicon/favicon.ico
