@@ -9,7 +9,7 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Prerequisites
 
-There is no extra plugins you need to install beforehand. Just follow the [Hexo installation](https://hexo.io/docs/) on its official website and you're start to go.
+There is no extra plugins you need to install beforehand. Just follow the [Hexo installation](https://hexo.io/docs/) on its official website and you're good to go.
 
 ### Installing
 
@@ -19,7 +19,8 @@ In your Hexo folder run command:
 $ git clone https://github.com/Suolawangzai/hexo-theme-nebula.git themes/nebula
 ```
 
-Then, change your `theme` setting in `_config.yml` in your Hexo folder to `nebula`. Don't forget to specify the language in `language` in the same `_config.yml` file. Fill in `default` for English. Currently, nebula support french, japenese, russian, Chinese(traditional/simplified), norwegian and dutch.
+Then, change your `theme` setting in `_config.yml` in your Hexo folder to `nebula`.
+Don't forget to specify the language in `language` in the same `_config.yml` file. Fill in `default` for English. Currently, nebula support french, japenese, russian, Chinese(traditional/simplified), norwegian and dutch.
 
 ```
 
