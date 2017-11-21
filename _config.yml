@@ -7,11 +7,6 @@ rss: /atom.xml
 # Content
 excerpt_link: Read More
 
-
-# widget behavior
-archive_type: 'monthly'
-show_count: false
-
 # Miscellaneous
 disqus_shortname: finmuch
 share_enabled: true
