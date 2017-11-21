@@ -20,7 +20,7 @@ $ git clone https://github.com/Suolawangzai/hexo-theme-nebula.git themes/nebula
 ```
 
 Then, change your `theme` setting in `_config.yml` in your Hexo folder to `nebula`.
-Don't forget to specify the language in `language` in the same `_config.yml` file. Fill in `default` for English. Currently, nebula support french, japenese, russian, Chinese(traditional/simplified), norwegian and dutch.
+Don't forget to specify the language in `language` in the same `_config.yml` file. Fill in `default` for English. Currently, nebula support French, Japenese, Russian, Chinese(traditional/simplified), Norwegian and Dutch.
 
 ```
 
