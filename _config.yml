@@ -7,10 +7,9 @@ rss: /atom.xml
 # Content
 excerpt_link: Read More
 
-# Miscellaneous
-disqus_shortname: finmuch
+# Social
+disqus_shortname:
 share_enabled: true
-google_analytics:
 favicon: /favicon/favicon.ico
 twitter:
 instagram:
@@ -19,3 +18,6 @@ github:
 google_plus:
 fb_admins:
 fb_app_id:
+
+# Miscellaneous
+google_analytics:
