@@ -4,6 +4,11 @@ $(function(){
   $('#menu-nav-icon').click(function(){
     $('#main-nav').slideToggle()
   })
+  $(window).on('resize', function (){
+    if ($(window).width() > 768){
+        $('#main-nav').show();
+    }
+  });
 
   /* Share */
   var shares = $("#social-share").children();

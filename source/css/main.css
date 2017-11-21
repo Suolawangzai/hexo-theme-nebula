@@ -373,14 +373,14 @@ body{
     /*background-image: url(../image/menu.png);*/
   }
   #main-nav{
+    display: none;
     position:absolute;
     top:30px;
     left:0;
     background-color: black;
     opacity: 0.8;
-    width: 100%;
+    /*width: 100%;*/
     padding-top: 10px;
-    display: none;
   }
   #main-nav a{
     float: none;
