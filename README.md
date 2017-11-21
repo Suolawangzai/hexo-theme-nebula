@@ -1,6 +1,8 @@
 # Hexo-thme-nebula
 Nebula is a simple, dark and easy-to-use [Hexo](https://hexo.io/) theme.
 
+[Preview](https://suolawangzai.github.io/)
+
 ## Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
@@ -17,7 +19,7 @@ In your Hexo folder run command:
 $ git clone https://github.com/Suolawangzai/hexo-theme-nebula.git themes/nebula
 ```
 
-Then, change your `theme` setting in `_config.yml` in your Hexo folder to `nebula`. Don't forget to specify the language in `language` in the same `_config.yml` file. Fill in `default` for English. Currently, nebula support french, japenese, russian, Chinese(traditional/simplified), norwegian,
+Then, change your `theme` setting in `_config.yml` in your Hexo folder to `nebula`. Don't forget to specify the language in `language` in the same `_config.yml` file. Fill in `default` for English. Currently, nebula support french, japenese, russian, Chinese(traditional/simplified), norwegian and dutch.
 
 ```
 
@@ -43,7 +45,7 @@ rss: /atom.xml
 # Content
 excerpt_link: Read More
 
-# Social (fill in your social account here so people can follow you)
+# Social (fill in your social account here so people can follow you :))
 disqus_shortname:
 share_enabled: true
 twitter:
