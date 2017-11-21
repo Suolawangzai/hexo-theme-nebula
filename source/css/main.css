@@ -303,12 +303,14 @@ body{
   margin-left:5%;
   padding:0;
   float:right;
+  border-radius: 1em;
   background-image:url(../image/backimg1.png);
   background-size:100%;
   background-repeat: repeat-y;
 }
 .list{
   width:100%;
+  box-sizing: border-box;
   margin:0;
   min-height: 50%;
   padding-top:20px;
@@ -322,7 +324,7 @@ body{
   overflow-x: scroll;
 }
 .list h3{
-  width:100%;
+  width:96%;
   margin:3%;
   padding:1%;
   background: linear-gradient(0deg,  #ffffff 0%, #52e0e0 20%, #0c00ff 50%, #52e0e0 80%, #ffffff 100%);
