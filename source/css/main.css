@@ -191,7 +191,9 @@ body{
     width: 35px;
 }
 #footer-info{
-  margin-top:5px;
+  margin:0;
+  padding-top:10px;
+  padding-bottom: 10px;
   font-size: 0.7em;
 }
 #footer-info a{
