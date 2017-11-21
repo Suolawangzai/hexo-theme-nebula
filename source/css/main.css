@@ -114,9 +114,11 @@ body{
   color: #777
 }
 /* For index -----------------------------------*/
+#main-part{
+    min-height: 300px;
+}
 .main{
   width: 100%;
-  min-height: 300px;
   background-image:url(../image/backimg2.png);
   background-size:100%;
   background-repeat: repeat-y;
@@ -371,14 +373,14 @@ body{
     /*background-image: url(../image/menu.png);*/
   }
   #main-nav{
+    display: none;
     position:absolute;
     top:30px;
     left:0;
     background-color: black;
     opacity: 0.8;
-    width: 100%;
+    /*width: 100%;*/
     padding-top: 10px;
-    display: none;
   }
   #main-nav a{
     float: none;
