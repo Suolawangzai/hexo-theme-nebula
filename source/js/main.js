@@ -7,6 +7,8 @@ $(function(){
   $(window).on('resize', function (){
     if ($(window).width() > 768){
         $('#main-nav').show();
+    }else{
+        $('#main-nav').hide();
     }
   });
 
